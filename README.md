@@ -18,6 +18,10 @@ Conway's Game of Life at a glance:
 3. Any live cell with more than three live neighbours dies, as if by overpopulation.
 4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
+Success condition:
+
+This project will be complete when a significant number of tests have been written that satisfy the methodology for TDD. If a successful program for the Game of Life gets written, this will be considered Extra Credit. The main focus of this project is to successfully follow TDD best practices and habits.
+
 Technologies used:
 
 Jest: it's familiarity to me will be very helpful in writing a battery of tests. I have used Jest before, but never as extensively as with this project.

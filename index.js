@@ -1,5 +1,5 @@
-const defnotatest = () => {
-  console.log("Does ESM work?");
+const gameOfLife = () => {
+  return true;
 }
 
-defnotatest();
+export default gameOfLife;
