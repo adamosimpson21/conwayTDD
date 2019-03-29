@@ -22,7 +22,11 @@ Success condition:
 
 This project will be complete when a significant number of tests have been written that satisfy the methodology for TDD. If a successful program for the Game of Life gets written, this will be considered Extra Credit. The main focus of this project is to successfully follow TDD best practices and habits.
 
+Confirmation:
+
+An increasing battery of testing will build up over time in a variety of files. There will also be a line of commits held at the github (https://github.com/adamosimpson21/conwayTDD) to keep track of progress over time. 
+
 Technologies used:
 
 Jest: it's familiarity to me will be very helpful in writing a battery of tests. I have used Jest before, but never as extensively as with this project.
-NodeJS, ESM, OOP, TDD, Data Structures, Algorithms, and many more
+NodeJS, ESM, Babel, OOP, TDD, Data Structures, Algorithms, and many more
