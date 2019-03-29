@@ -1,0 +1,19 @@
+{
+  "name": "conwaytdd",
+  "version": "1.0.0",
+  "description": "Solving Conway's Game of Life using TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamosimpson21/conwayTDD.git"
+  },
+  "author": "BandsWithLegends",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamosimpson21/conwayTDD/issues"
+  },
+  "homepage": "https://github.com/adamosimpson21/conwayTDD#readme"
+}
