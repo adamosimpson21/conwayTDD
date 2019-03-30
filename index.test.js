@@ -11,3 +11,7 @@ test("Input [[1]] returns [[0]]", () =>{
 test("Input [[0, 0], [0, 0]] returns [[0, 0], [0, 0]]", () =>{
   expect(gameOfLife([[0, 0], [0, 0]])).toEqual([[0, 0], [0, 0]])
 })
+
+test("Input [[1, 1], [1, 1]] returns [[1, 1], [1, 1]]", () =>{
+  expect(gameOfLife([[1, 1], [1, 1]])).toEqual([[1, 1], [1, 1]])
+})
