@@ -13,4 +13,11 @@ const gameOfLife = board => {
   return [[0]];
 }
 
-export default gameOfLife;
+const constructBoard = number =>{
+  if(number > 1){
+    return [[0,0], [0,0]];
+  }
+  return [[0]];
+}
+
+export {gameOfLife, constructBoard};
