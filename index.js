@@ -13,11 +13,14 @@ const gameOfLife = board => {
   return [[0]];
 }
 
-const constructBoard = number =>{
-  if(number > 1){
-    return [[0,0], [0,0]];
-  }
-  return [[0]];
+const oneOrZero = () => {
+  return Math.round(Math.random());
 }
 
-export {gameOfLife, constructBoard};
+const constructBoard = number =>{
+  return Array(number).fill(null).map(() => Array(number).fill(null).map(() => oneOrZero()));
+}
+
+// constructBoard(10);
+
+export {gameOfLife, constructBoard, oneOrZero};
