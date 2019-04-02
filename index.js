@@ -13,6 +13,10 @@ const gameOfLife = board => {
   return [[0]];
 }
 
+const getNumNeighbors = () => {
+  return 0;
+}
+
 const oneOrZero = () => {
   return Math.round(Math.random());
 }
@@ -23,4 +27,4 @@ const constructBoard = number =>{
 
 // constructBoard(10);
 
-export {gameOfLife, constructBoard, oneOrZero};
+export {gameOfLife, constructBoard, oneOrZero, getNumNeighbors};

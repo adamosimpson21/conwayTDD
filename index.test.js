@@ -1,4 +1,4 @@
-import {gameOfLife, constructBoard, oneOrZero} from "./index.js"
+import {gameOfLife, constructBoard, oneOrZero, getNumNeighbors} from "./index.js"
 
 test("Input [[0]] returns [[0]]", () =>{
   expect(gameOfLife([[0]])).toEqual([[0]])
@@ -72,4 +72,9 @@ test("Construct Board returns some alive and some dead cells", () => {
   constructBoard(10).forEach(row => row.forEach(cell => cell && ++aliveCells));
   const passes = (aliveCells >=40 && aliveCells <= 60);
   expect(passes).toBe(true);
+})
+
+// testing getNumNeighbors
+test("getNumNeighbors return a number", () => {
+  expect(typeof getNumNeighbors()).toBe("number");
 })
