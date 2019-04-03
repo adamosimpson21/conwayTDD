@@ -13,7 +13,7 @@ const gameOfLife = board => {
   return [[0]];
 }
 
-const getNumNeighbors = () => {
+const getNumNeighbors = (x, y, board) => {
   return 0;
 }
 

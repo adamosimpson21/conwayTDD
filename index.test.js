@@ -74,7 +74,28 @@ test("Construct Board returns some alive and some dead cells", () => {
   expect(passes).toBe(true);
 })
 
+const mockboard = [
+  [0, 1, 1, 0],
+  [0, 0, 1, 1],
+  [1, 0, 1, 1],
+  [1, 1, 1, 1]
+]
+
+
 // testing getNumNeighbors
 test("getNumNeighbors return a number", () => {
-  expect(typeof getNumNeighbors()).toBe("number");
+  expect(typeof getNumNeighbors(0, 0, mockboard)).toBe("number");
+})
+
+
+test("getNumNeighbors(1,1) returns 5", () => {
+  expect(getNumNeighbors(1, 1, mockboard)).toBe(5);
+})
+
+test("getNumNeighbors(2,2) returns 6", () => {
+  expect(getNumNeighbors(2, 2, mockboard)).toBe(6);
+})
+
+test("getNumNeighbors(0,0) returns 1", () => {
+  expect(getNumNeighbors(0, 0, mockboard)).toBe(1);
 })
