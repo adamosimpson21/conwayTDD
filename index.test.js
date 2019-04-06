@@ -138,3 +138,7 @@ test("countAllNeighbors[1][3] returns 4", () => {
 test("countAllNeighbors[0][0] returns 1", () => {
   expect(countAllNeighbors(mockboard)[0][0]).toBe(1)
 })
+
+test("countAllNeighbors[3][3] returns 3", () => {
+  expect(countAllNeighbors(mockboard)[3][3]).toBe(3)
+})
