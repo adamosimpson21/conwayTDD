@@ -1,4 +1,4 @@
-import {gameOfLife, constructBoard, oneOrZero, getNumNeighbors, countAllNeighbors, new2DArray} from "./index.js"
+import {gameOfLife, constructBoard, oneOrZero, getNumNeighbors, countAllNeighbors, new2DArray, tickBoard} from "./index.js"
 
 test("Input [[0]] returns [[0]]", () =>{
   expect(gameOfLife([[0]])).toEqual([[0]])
@@ -161,4 +161,10 @@ test("new2DArray(num) returns a cell of null", () => {
 
 test("new2DArray(num, val) returns a cell of val", () => {
   expect(new2DArray(6, 5)[4][4]).toBe(5);
+})
+
+// tick board
+
+test("tickBoard returns 2D array", () => {
+  expect(typeof tickBoard(mockboard)[1][1]).toBe("number")
 })

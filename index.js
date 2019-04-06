@@ -13,12 +13,32 @@ const gameOfLife = board => {
   return [[0]];
 }
 
-const tickBoard = (board, neighborBoard) => {
+const tickBoard = board => {
+  const neighborBoard = countAllNeighbors(board);
   const length = board.length;
-
-  board.forEach(row => {
-    row.forEach()
+  let newBoard = new2DArray(length);
+  board.forEach((row, x) => {
+    row.forEach((cell, y) => {
+      const numNeighbors = neighborBoard[x][y];
+      if(cell){
+        if(numNeighbors < 2){
+          newBoard[x][y] = 0;
+        } else if(numNeighbors > 3){
+          newBoard[x][y] = 0;
+        } else {
+          newBoard[x][y] = 1;
+        }
+      } else {
+        if(numNeighbors === 3){
+          newBoard[x][y] = 1;
+        } else {
+          newBoard[x][y] = 0;
+        }
+      }
+    })
   })
+  console.log(newBoard);
+  return newBoard;
 }
 
 const getNumNeighbors = (x, y, board) => {
@@ -56,4 +76,4 @@ const countAllNeighbors = board => {
 
 // constructBoard(10);
 
-export {gameOfLife, constructBoard, oneOrZero, getNumNeighbors, countAllNeighbors, new2DArray};
+export {gameOfLife, constructBoard, oneOrZero, getNumNeighbors, countAllNeighbors, new2DArray, tickBoard};
