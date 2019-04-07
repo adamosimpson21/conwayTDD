@@ -37,7 +37,6 @@ const tickBoard = board => {
       }
     })
   })
-  // console.log(newBoard);
   return newBoard;
 }
 
@@ -75,5 +74,12 @@ const countAllNeighbors = board => {
 }
 
 // constructBoard(10);
+
+let myBoard = constructBoard(10);
+for(let i = 0; i <= 20; i++){
+ console.log(myBoard);
+ myBoard = tickBoard(myBoard);
+}
+
 
 export {gameOfLife, constructBoard, oneOrZero, getNumNeighbors, countAllNeighbors, new2DArray, tickBoard};

@@ -83,7 +83,7 @@ const mockboard = [
 
 // mockboard after 1 tick
 const tickboard = [
-  [0, 1, 0, 1],
+  [0, 1, 1, 1],
   [0, 0, 0, 0],
   [1, 0, 0, 0],
   [1, 0, 0, 1]
@@ -178,9 +178,9 @@ test("tickBoard returns 2D array", () => {
 })
 
 test("tickBoard returns a different array", () => {
-  expect(tickBoard(mockboard)!==mockboard).toBe(true)
+  expect(tickBoard(mockboard)).not.toEqual(mockboard)
 })
 
 test("tickBoard returns mockboard after 1 tick", () => {
-  expect(tickBoard(mockboard)===tickBoard).toBe(true)
+  expect(tickBoard(mockboard)).toEqual(tickboard)
 })
