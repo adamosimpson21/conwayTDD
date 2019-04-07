@@ -73,13 +73,17 @@ const countAllNeighbors = board => {
   return neighborBoard;
 }
 
-// constructBoard(10);
-
-let myBoard = constructBoard(10);
-for(let i = 0; i <= 20; i++){
- console.log(myBoard);
- myBoard = tickBoard(myBoard);
+// console.logs board according to these numbers
+const run = (ticks, boardSize) => {
+  let myBoard = constructBoard(boardSize);
+  for(let i = 0; i <= ticks; i++){
+    console.log(myBoard);
+    myBoard = tickBoard(myBoard);
+  }
 }
+let ticks = 20;
+let boardSize = 25
+run(ticks, boardSize);
 
 
 export {gameOfLife, constructBoard, oneOrZero, getNumNeighbors, countAllNeighbors, new2DArray, tickBoard};
