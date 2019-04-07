@@ -81,6 +81,14 @@ const mockboard = [
   [1, 1, 1, 1]
 ]
 
+// mockboard after 1 tick
+const tickboard = [
+  [0, 1, 0, 1],
+  [0, 0, 0, 0],
+  [1, 0, 0, 0],
+  [1, 0, 0, 1]
+]
+
 // testing getNumNeighbors
 test("getNumNeighbors return a number", () => {
   expect(typeof getNumNeighbors(0, 0, mockboard)).toBe("number");
@@ -167,4 +175,12 @@ test("new2DArray(num, val) returns a cell of val", () => {
 
 test("tickBoard returns 2D array", () => {
   expect(typeof tickBoard(mockboard)[1][1]).toBe("number")
+})
+
+test("tickBoard returns a different array", () => {
+  expect(tickBoard(mockboard)!==mockboard).toBe(true)
+})
+
+test("tickBoard returns mockboard after 1 tick", () => {
+  expect(tickBoard(mockboard)===tickBoard).toBe(true)
 })

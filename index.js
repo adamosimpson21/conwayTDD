@@ -37,7 +37,7 @@ const tickBoard = board => {
       }
     })
   })
-  console.log(newBoard);
+  // console.log(newBoard);
   return newBoard;
 }
 
